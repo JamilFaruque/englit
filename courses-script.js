@@ -28,30 +28,32 @@ const upArrow = `<span id='up-arrow' class='absolute'> <svg xmlns="http://www.w3
 
 
 const courseTitle = document.querySelectorAll('#course-title');
-const courseDetail = document.querySelectorAll('#course-detail');
+const courseDetail = document.querySelectorAll('.course-detail');
 
+let heights = [];
+
+for(let i=0;i<courseDetail.length;i++){
+  heights.push(`${courseDetail[i].offsetHeight}px`)
+}
+console.log(heights);
 for (let i = 0; i < courseDetail.length; i++) {
   courseTitle[i].innerHTML += downArrow
+  courseDetail[i].classList.add('h-0');
   courseTitle[i].addEventListener('click', function () {
     if (courseDetail[i].classList.contains('h-0')) {
       courseDetail[i].classList.remove('h-0');
       courseTitle[i].querySelector('span').remove()
       courseTitle[i].innerHTML += upArrow
-      const contentHeight = courseDetail[i].scrollHeight;
 
-      const contentHeightInPixels = contentHeight + 'px';
-
-      courseDetail[i].style.height = contentHeightInPixels;
-      courseDetail[i].classList.add('h-auto');
+      courseDetail[i].style.height = heights[i];
+  
     } else {
       courseTitle[i].querySelector('span').remove()
       courseTitle[i].innerHTML += downArrow
 
       courseDetail[i].classList.add('h-0');
-      courseDetail[i].classList.remove('h-auto');
+      courseDetail[i].style.height = '0';
 
-      // Reset the height to 0
-      courseDetail[i].style.height = '0px';
     }
 
   });
