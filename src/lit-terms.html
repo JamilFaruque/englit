@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/book-solid.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../dist/output.css">
+  <title>Literary Terms</title>
+</head>
+
+<body>
+  <header id="header" class="bg-my-hero-bg h-auto pb-5  bg-cover relative">
+    <div class="container w-5/6 m-auto text-white flex justify-between items-cente py-3 animate-nav-load">
+      <div class="left">
+        <svg class="m-auto w-8 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+        </svg>
+        <span class="font-mono text-2xl font-bold">EngLit</span>
+      </div>
+      <div class="right flex items-center">
+        <!-- nav for smaller screens -->
+        <nav class="z-30 sm:hidden">
+          <button id="menu-bar" class="sm:hidden"><svg class="w-8" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
+            </svg>
+          </button>
+          <ul id="menu-items" class="-translate-y-80 sm:hidden absolute bg-black top-0 left-0 w-full text-center py-6">
+            <li class="my-3 font-mono text-xl"><a href="../src/index.html">Home</a></li>
+            <li class="my-3 font-mono text-xl"><a href="../src/explore.html">Explore</a></li>
+            <li class="my-3 font-mono text-xl"><a href="../src/lit-terms.html">Literary terms</a></li>
+            <li class="my-3 font-mono text-xl"><a href="../src/history.html">History</a></li>
+            <li class="my-3 font-mono text-xl"><a href="../src/final-year-special/courses.html">4th-year</a></li>
+            <button id="cancel-menu-bar" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </ul>
+        </nav>
+        <!-- nav for big screens -->
+        <nav>
+          <ul class="hidden sm:flex ">
+            <li class="pl-3 md:pl-5 font-mono font-extrabold md:text-lg text-sm duration-300 hover:-translate-y-1"><a class="hover:text-blue-400 "
+                href="../src/index.html">Home</a></li>
+            <li class="pl-3 md:pl-5 font-mono font-extrabold md:text-lg text-sm duration-300 hover:-translate-y-1"><a class="hover:text-blue-400"
+                href="../src/explore.html">Explore</a></li>
+            <li class="pl-3 md:pl-5 font-mono font-extrabold md:text-lg text-sm duration-300 hover:-translate-y-1"><a class="border-b-2 border-blue-400"
+                href="../src/lit-terms.html">Literary terms</a></li>
+            <li class="pl-3 md:pl-5 font-mono font-extrabold md:text-lg text-sm duration-300 hover:-translate-y-1"><a class="hover:text-blue-400"
+                href="../src/history.html">History</a></li>
+            <li class="pl-3 md:pl-5 font-mono font-extrabold md:text-lg text-sm duration-300 hover:-translate-y-1"><a class="hover:text-blue-400"
+                href="../src/final-year-special/courses.html">4th-year</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+
+        <!-- PAGE CONTENTS -->
+        <div class=" w-4/5 text-center text-white shadow-my-shadow bg-slate-700 p-3 rounded-md m-auto">
+          <h1 class="font-mono font-bold text-xl ">Important Literary Terms</h1>
+          <div class="justify-evenly flex">
+            <ul class="w-5/12">
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Alliteration</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Allusion</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Anapest</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Anaphora</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Aphorism</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Apostrophe</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Archaism</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Assonance</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Epic Simile</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Dramatic Irony</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Imagery</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Invocation</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Oxymoron</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Onomatopoeia</button></li>
+    
+            </ul>
+            <ul class="w-5/12">
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Paradox</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Personification</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Poetic Justice</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Hamartia</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Heroic Couplet</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Hyperbole</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Catastrophe</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Catharsis</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Chorus</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Comic Relief</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Conceit</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Connotation</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Couplet</button></li>
+              <li class="sm:py-3 sm:my-2 md:my-3 border my-1 hover:bg-slate-500 duration-300 animate-course-load"><button class="py-2 sm:py-0">Diction</button></li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
